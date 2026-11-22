@@ -288,6 +288,7 @@ code{font-family:var(--f-data);font-size:.87em;background:var(--sunk);padding:.1
     <a href="#extract"><b>05</b>추출</a>
     <a href="#synth"><b>06</b>합성</a>
     <a href="#cheat"><b>07</b>치트시트</a>
+    <a href="#roadmap"><b>08</b>공략 로드맵</a>
     <a href="#glossary"><b>A</b>한글 대조표</a>
   </div>
 </nav>
@@ -794,7 +795,7 @@ code{font-family:var(--f-data);font-size:.87em;background:var(--sunk);padding:.1
     <div class="bar"></div>
     <div class="body">
       <h3>플라스크가 진짜 병목입니다</h3>
-      <p>재료 한 칸마다 플라스크가 하나씩 <b>통째로 소모</b>됩니다. 기본 백신 한 대에 플라스크 4개, 치료제는 더 많습니다.</p>
+      <p>플라스크 한 병은 <b>0.2</b>뿐이라 레시피 한 칸에 여러 병이 들어갑니다. 기본 백신 한 대에 <b>플라스크 5개</b>, 고급은 12개, 치료제는 플라스크 10개에 <b>시험관 12개</b>가 통째로 깨집니다.</p>
       <p>쓴 것은 <span class="ic ic-flask-dirty"></span><b>오염된 플라스크</b>로 돌아옵니다. <span class="menu">뜨거운 물로 살균 (x15)</span>으로 한 번에 15개씩 되살리고, <span class="ic ic-furnace"></span>머플로를 세워 자체 생산하는 쪽이 결국 빠릅니다.</p>
     </div>
   </div>
@@ -814,9 +815,9 @@ code{font-family:var(--f-data);font-size:.87em;background:var(--sunk);padding:.1
       <div class="rail-mark"><span class="rail-chip">2</span><span class="rail-line"></span></div>
       <div class="rail-body">
         <b><span class="ic ic-centrifuge"></span>혈액 성분 분리</b>
-        <small><span class="menu">2 - 혈액 성분 분리</span> · 원심분리기 · 응급처치 2 — 한 번에 <b>두 가지가 동시에</b> 나옵니다. 가장 효율 좋은 단계입니다.</small>
+        <small><span class="menu">2 - 혈액 성분 분리</span> · 원심분리기 · 응급처치 2 — 한 번에 <b>두 가지가 동시에</b> 나옵니다. 다만 <b>감염혈 시험관 5개</b>를 먹는 가장 비싼 단계이기도 합니다.</small>
         <div class="mats">
-          <span><span class="ic ic-blood-inf"></span>감염혈 시험관 1</span>
+          <span><span class="ic ic-blood-inf"></span><b>감염혈 시험관 5</b></span>
           <span><span class="ic ic-flask"></span>빈 플라스크 2</span>
           <span class="arw">→</span>
           <span><span class="ic ic-plasma"></span><b>혈장</b> 1병</span>
@@ -877,20 +878,28 @@ code{font-family:var(--f-data);font-size:.87em;background:var(--sunk);padding:.1
   <div class="sec-head">
     <span class="sec-num">06</span>
     <h2>백신 합성 — 화학 실험대</h2>
-    <p class="lede">여기까지 오면 조합뿐입니다. <b>칸마다 플라스크가 하나씩</b> 통째로 들어갑니다.</p>
+    <p class="lede">게임이 보여주는 숫자는 리터입니다. <b>플라스크 한 병 = 0.2</b>, <b>시험관 한 개 = 0.1</b>이니 아래 표는 그걸 <b>병·개수로 환산</b>해 놓은 것입니다.</p>
+  </div>
+
+  <div class="notice warn">
+    <div class="bar"></div>
+    <div class="body">
+      <h3><span class="mk">÷0.2</span>레시피의 «0.8»은 한 병이 아니라 네 병입니다</h3>
+      <p>이걸 모르면 재료 계산이 통째로 어긋납니다. 치료제의 «항체 1.2»는 <b>시험관 12개</b>라는 뜻입니다. 실제로 치료제를 한 번 만들면 오염된 시험관이 정확히 12개 돌아옵니다.</p>
+    </div>
   </div>
 
   <div class="scroll">
     <table>
-      <caption>뇌척수액 등급 요구가 사다리입니다. <b>치료제는 최상급 2개</b>를 한 번에 먹고, <b>백혈구는 안 들어갑니다.</b></caption>
+      <caption>뇌척수액 등급 요구가 사다리입니다. <b>치료제는 최상급 2개</b>를 한 번에 먹고, <b>백혈구는 안 들어갑니다.</b> 맨 오른쪽이 한 번 만들 때 깨지는 용기 수입니다.</caption>
       <thead>
-        <tr><th>백신</th><th class="n">응급처치</th><th class="n">정제수</th><th class="n">혈장</th><th class="n">백혈구</th><th class="n">차아염소산</th><th class="n">항체</th><th>뇌척수액</th></tr>
+        <tr><th>백신</th><th class="n">응급처치</th><th class="n">정제수</th><th class="n">혈장</th><th class="n">백혈구</th><th class="n">차아염소산</th><th class="n">항체</th><th>뇌척수액</th><th class="n">용기 소모</th></tr>
       </thead>
       <tbody>
-        <tr><td><span class="ic ic-vac-plain"></span><b>기본</b> <span class="n" style="color:var(--ink3);font-size:.8em">7A</span></td><td class="n">4</td><td class="n">0.2</td><td class="n">0.2</td><td class="n">0.4</td><td class="n">0.2</td><td class="n">—</td><td>아무 등급 ×1</td></tr>
-        <tr><td><span class="ic ic-vac-qual"></span><b>고품질</b> <span class="n" style="color:var(--ink3);font-size:.8em">7B</span></td><td class="n">5</td><td class="n">0.4</td><td class="n">0.4</td><td class="n">0.6</td><td class="n">0.2</td><td class="n">—</td><td>중급 이상 ×1</td></tr>
-        <tr><td><span class="ic ic-vac-adv"></span><b>고급</b> <span class="n" style="color:var(--ink3);font-size:.8em">9A</span></td><td class="n">6</td><td class="n">0.6</td><td class="n">0.6</td><td class="n">1.0</td><td class="n">0.2</td><td class="n">0.1</td><td><b>최상급 ×1</b></td></tr>
-        <tr><td><span class="ic ic-vac-cure"></span><b>치료제</b> <span class="n" style="color:var(--ink3);font-size:.8em">9</span></td><td class="n">8</td><td class="n">0.8</td><td class="n">0.8</td><td class="n">—</td><td class="n">0.4</td><td class="n">1.2</td><td><b>최상급 ×2</b></td></tr>
+        <tr><td><span class="ic ic-vac-plain"></span><b>기본</b> <span class="n" style="color:var(--ink3);font-size:.8em">7A</span></td><td class="n">4</td><td class="n">1병</td><td class="n">1병</td><td class="n">2병</td><td class="n">1병</td><td class="n">—</td><td>아무 등급 ×1</td><td class="n">플라스크 5</td></tr>
+        <tr><td><span class="ic ic-vac-qual"></span><b>고품질</b> <span class="n" style="color:var(--ink3);font-size:.8em">7B</span></td><td class="n">5</td><td class="n">2병</td><td class="n">2병</td><td class="n">3병</td><td class="n">1병</td><td class="n">—</td><td>중급 이상 ×1</td><td class="n">플라스크 8</td></tr>
+        <tr><td><span class="ic ic-vac-adv"></span><b>고급</b> <span class="n" style="color:var(--ink3);font-size:.8em">9A</span></td><td class="n">6</td><td class="n">3병</td><td class="n">3병</td><td class="n">5병</td><td class="n">1병</td><td class="n">1개</td><td><b>최상급 ×1</b></td><td class="n">플라스크 12<br>시험관 1</td></tr>
+        <tr><td><span class="ic ic-vac-cure"></span><b>치료제</b> <span class="n" style="color:var(--ink3);font-size:.8em">9</span></td><td class="n">8</td><td class="n">4병</td><td class="n">4병</td><td class="n">—</td><td class="n">2병</td><td class="n bad">12개</td><td><b>최상급 ×2</b></td><td class="n">플라스크 10<br>시험관 12</td></tr>
       </tbody>
     </table>
   </div>
@@ -966,6 +975,156 @@ code{font-family:var(--f-data);font-size:.87em;background:var(--sunk);padding:.1
       </ul>
     </div>
   </div>
+</section>
+
+<hr>
+
+<section id="roadmap">
+  <div class="sec-head">
+    <span class="sec-num">08</span>
+    <h2>공략 로드맵 — 어디 가서 뭘 몇 개</h2>
+    <p class="lede">목표 하나당 필요한 실제 수량입니다. 전부 레시피에서 역산했고, 부검 구수는 우리 서버 확률로 계산했습니다.</p>
+  </div>
+
+  <div class="notice tip">
+    <div class="bar"></div>
+    <div class="body">
+      <h3>이 순서를 지키세요 — 뇌가 썩기 때문입니다</h3>
+      <p><b>책 → 랩 건설 → 유리 공방 → 그제서야 시체</b>. 뇌는 하루면 썩는데, <b>뇌척수액 주사기로 바꿔두면 영원히 안 썩습니다.</b> 그러니 현미경과 정제수를 먼저 갖춰놓고, 뇌가 나오는 족족 <span class="menu">5B</span>로 돌려서 쟁여두는 게 정답입니다.</p>
+    </div>
+  </div>
+
+  <h3 class="rule"><span class="ic ic-lg ic-bk-vir2"></span>1막 · 책 사냥 — 혼자서도 됩니다</h3>
+  <div class="scroll">
+    <table>
+      <caption>이 네 권이 없으면 그 다음은 전부 막혀 있습니다. 대학이 멀면 장비책 두 권부터 챙겨 랩을 지어두세요.</caption>
+      <thead><tr><th>목표</th><th>어디로</th><th class="n">몇 권</th></tr></thead>
+      <tbody>
+        <tr><td><span class="ic ic-bk-vir1"></span><span class="ic ic-bk-vir2"></span>바이러스학 1 · 2권</td><td><b>루이빌 대학 도서관 과학 서가</b><br>→ 안 되면 군 보급창 의료품 · 실험실</td><td class="n">각 1</td></tr>
+        <tr><td><span class="ic ic-bk-chem"></span>기초 화학 입문</td><td><b>대학 과학 창고</b> · 대학 도서관 과학 서가</td><td class="n">1</td></tr>
+        <tr><td><span class="ic ic-bk-eq1"></span>실험실 장비 Vol. 1</td><td>아무 <b>도서관</b> · <b>공구점</b> · 기가마트 서적</td><td class="n">1</td></tr>
+        <tr><td><span class="ic ic-bk-eq3"></span>실험실 장비 Vol. 3</td><td>같은 곳 — 유리 자급용, 없으면 나중에</td><td class="n">1</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 class="rule"><span class="ic ic-lg ic-chemset"></span>2막 · 랩 건설 — 통합 쇼핑 리스트</h3>
+  <p>장비 <b>4대 + 부검대 + 머플로</b>를 한 번에 짓는 데 드는 총량입니다. 고철 더미·차고·창고를 돌면 하루 이틀이면 모입니다.</p>
+  <div class="scroll">
+    <table>
+      <caption>필요 스킬 최고치: <b>용접 4 · 전기 4 · 응급처치 3 · 목공 3 · 유리세공 1</b>. 도구는 드라이버 · 망치 · 블로우토치 · 용접 마스크.</caption>
+      <thead><tr><th>분류</th><th>품목</th></tr></thead>
+      <tbody>
+        <tr><td>금속</td><td>철판 <b>19</b> · 소형 철판 <b>37</b> · 고철 <b>16</b> · 나사 <b>40</b> · 금속봉 5 · 금속 파이프 1 · 알루미늄 2</td></tr>
+        <tr><td>전기</td><td>전자부품 <b>39</b> · 전선 9 · 철사 5 · <b>자동차 배터리 2</b> · 전구 4 · 초록 전구 2</td></tr>
+        <tr><td>목재 · 기타</td><td>판자 4 · 못 6 · 덕트테이프 2 · 안경 1 · 용접봉 16</td></tr>
+        <tr><td>유리 (소모됨)</td><td><span class="ic ic-testtube"></span>시험관 <b>8</b> · <span class="ic ic-flask"></span>플라스크 <b>4</b> — 장비 만들 때 깨집니다</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="notice warn">
+    <div class="bar"></div>
+    <div class="body">
+      <h3>랩 자리는 컴퓨터가 있는 방으로</h3>
+      <p>크로마토그래프가 <b>컴퓨터 근처</b>에서만 돌아갑니다. 사무실 · 학교 교무실 · 집 서재 중에 고르거나, 컴퓨터를 하나 뜯어다 놓으세요. 부검대까지 한 방에 모으면 동선이 반으로 줍니다.</p>
+    </div>
+  </div>
+
+  <h3 class="rule"><span class="ic ic-lg ic-flask"></span>3막 · 유리 공방 — 여기서 대부분 막힙니다</h3>
+  <p>용기는 깨지지만 <b>오염된 상태로 돌아오고, 살균하면 되살아납니다.</b> 그래서 중요한 건 총 소모량이 아니라 <b>돌려 쓸 보유량</b>입니다.</p>
+  <div class="scroll">
+    <table>
+      <caption><span class="menu">뜨거운 물로 살균 (x15)</span>으로 한 번에 15개씩 되살립니다. 냄비·양동이에 물을 끓여놓고 배치로 돌리세요. <span class="ic ic-furnace"></span>머플로가 있으면 모래로 자급됩니다.</caption>
+      <thead><tr><th>용기</th><th class="n">권장 보유</th><th>이유</th></tr></thead>
+      <tbody>
+        <tr><td><span class="ic ic-flask"></span>플라스크</td><td class="n">40개 이상</td><td>정제수 비축 + 시약 + 혈액 가공이 전부 플라스크입니다</td></tr>
+        <tr><td><span class="ic ic-testtube"></span>시험관</td><td class="n">40개 이상</td><td>감염혈 채취 전용이라 부검 한 번에 수십 개가 나갑니다</td></tr>
+        <tr><td><span class="ic ic-syringe"></span>주사기</td><td class="n">10개 이상</td><td>뇌척수액마다 1개, 백신마다 1개. <b>재사용 주사기</b>는 살균해서 무한 사용</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 class="rule">4막 · 목표별 소요량 — 핵심 표</h3>
+  <div class="scroll">
+    <table>
+      <caption>부검 구수는 <b>부검대 + 응급처치 6~8</b> 기준(구당 감염혈 약 1.7개)입니다. 땅바닥 부검이면 세 배로 보세요. 플라스크는 살균 재사용이 가능하니 ‘연 소모’는 누적 횟수입니다.</caption>
+      <thead>
+        <tr><th>목표</th><th class="n">감염혈</th><th class="n">부검 구수</th><th class="n">필요한 뇌</th><th class="n">정제수</th><th class="n">황산암모늄</th><th class="n">플라스크 연소모</th><th class="n">시험관 연소모</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="ic ic-vac-plain"></span><b>기본 백신 1개</b><br><small style="color:var(--ink2)">작동 확인용</small></td>
+          <td class="n">10</td><td class="n">약 6구</td><td class="n">아무 등급 1</td><td class="n">5병</td><td class="n">2병</td><td class="n">14</td><td class="n">10</td>
+        </tr>
+        <tr>
+          <td><span class="ic ic-vac-adv"></span><b>고급 백신 1개</b><br><small style="color:var(--ink2)">생존 보험 · 1순위</small></td>
+          <td class="n">30</td><td class="n">약 18구</td><td class="n good">최상급 1</td><td class="n">12병</td><td class="n">7병</td><td class="n">38</td><td class="n">31</td>
+        </tr>
+        <tr>
+          <td><span class="ic ic-vac-cure"></span><b>치료제 1개</b><br><small style="color:var(--ink2)">최종 목표</small></td>
+          <td class="n bad">60</td><td class="n bad">약 35구</td><td class="n bad">최상급 2</td><td class="n">32병</td><td class="n">24병</td><td class="n">94</td><td class="n">72</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="notice">
+    <div class="bar"></div>
+    <div class="body">
+      <h3><span class="mk">×12</span>치료제가 비싼 진짜 이유는 항체입니다</h3>
+      <p>치료제는 <b>항체 시험관 12개</b>를 먹습니다. 항체 1개마다 백혈구 1병이 들어가고, 백혈구 1병마다 혈구 1병이, 혈구 1병마다 <b>감염혈 5개</b>가 들어갑니다. 12개를 쌓으려면 감염혈 60개가 필요한 겁니다.</p>
+      <p style="margin-bottom:0">반대로 <b>고급 백신은 항체가 1개</b>뿐이라 비용이 절반 이하입니다. 그래서 순서가 <b>고급 백신 먼저</b>입니다.</p>
+    </div>
+  </div>
+
+  <h3 class="rule">5막 · 화학약품 환산</h3>
+  <div class="scroll">
+    <table>
+      <caption>시약 한 병에 화학약품 두 종이 1개씩. 황산암모늄이 압도적으로 많이 들어갑니다 — 보일 때마다 <b>암모니아와 황산</b>을 쓸어 담으세요.</caption>
+      <thead><tr><th>목표</th><th class="n"><span class="ic ic-ammonia"></span>암모니아</th><th class="n"><span class="ic ic-h2so4"></span>황산</th><th class="n"><span class="ic ic-hcl"></span>염산</th><th class="n"><span class="ic ic-naoh"></span>수산화나트륨</th><th class="n">숯</th><th class="n">알코올 솜</th></tr></thead>
+      <tbody>
+        <tr><td>기본 백신 1개</td><td class="n">2</td><td class="n">2</td><td class="n">1</td><td class="n">1</td><td class="n">—</td><td class="n">4</td></tr>
+        <tr><td>고급 백신 1개</td><td class="n">7</td><td class="n">7</td><td class="n">1</td><td class="n">1</td><td class="n">1</td><td class="n">12</td></tr>
+        <tr><td>치료제 1개</td><td class="n bad">24</td><td class="n bad">24</td><td class="n">2</td><td class="n">2</td><td class="n">12</td><td class="n">24</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 class="rule">6막 · 복제로 전환 — 여기서 끝납니다</h3>
+  <p>치료제가 <b>하나</b> 완성되면 게임이 바뀝니다. 복제 레시피는 원본을 <b>소모하지 않고</b>, 요구 등급도 풀립니다.</p>
+  <div class="scroll">
+    <table>
+      <caption>복제는 <b>응급처치 9</b>가 필요합니다. 부검만 꾸준히 해도 응급처치는 알아서 오릅니다.</caption>
+      <thead><tr><th>복제</th><th class="n">항체</th><th class="n">뇌척수액</th><th>달라지는 점</th></tr></thead>
+      <tbody>
+        <tr><td><span class="ic ic-vac-adv"></span>고급 백신 복제</td><td class="n">1개</td><td class="n">중급 가능</td><td class="good">최상급 뇌가 더 이상 필요 없음</td></tr>
+        <tr><td><span class="ic ic-vac-cure"></span>치료제 복제</td><td class="n">4개</td><td class="n">아무 등급</td><td class="good">원본 대비 항체 1/3, 뇌 제약 없음</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="notice tip">
+    <div class="bar"></div>
+    <div class="body">
+      <h3>둘이서 한다면 이렇게 나누세요</h3>
+      <dl class="kv">
+        <dt>한 명</dt><dd><b>연구소 인턴</b>으로 시작 — 부검과 뇌 채취 전담. 최상급 뇌 확률이 50%라 혼자 다 뽑습니다.</dd>
+        <dt>다른 한 명</dt><dd><b>파밍과 유리 공방</b> 전담 — 화학약품·플라스크·시험관 보급과 살균. 이게 끊기면 인턴이 놉니다.</dd>
+      </dl>
+      <p style="margin:.9rem 0 0">부검은 시체 <b>한 구에 한 번</b>뿐이니, 시체 많은 곳을 찾으면 부검대를 그 근처에 짓는 게 훨씬 빠릅니다.</p>
+    </div>
+  </div>
+
+  <h3 class="rule">한 줄 요약</h3>
+  <ol class="steps">
+    <li><div><b>대학</b>에서 책 4권. 이게 안 되면 아무것도 시작 안 됩니다.</div></li>
+    <li><div>컴퓨터 있는 방에 <b>랩 + 부검대</b>. 철판·나사·전자부품이 주재료.</div></li>
+    <li><div><b>플라스크 40 · 시험관 40 · 주사기 10</b> 확보하고 살균 체계를 갖춥니다.</div></li>
+    <li><div>시체 <b>6구</b>로 <b>기본 백신 1개</b> — 공정이 도는지 확인합니다.</div></li>
+    <li><div>시체 <b>18구</b>로 <b>고급 백신 1개</b> — 물려도 안 죽는 몸이 됩니다.</div></li>
+    <li><div>시체 <b>35구</b>로 <b>치료제 1개</b> — 항체 12개가 전부입니다.</div></li>
+    <li><div>그 다음부터는 <b>복제</b>. 최상급 뇌도 필요 없어집니다.</div></li>
+  </ol>
 </section>
 
 <hr>
